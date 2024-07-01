@@ -9,17 +9,18 @@ profile:
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+    <p>Department of Chemistry,</p>
+    <p>College of Staten Island, CUNY</p>
+    <p>2800 Victory Blvd</p>
+    <p>Staten Island, NY 10314</p>
 
 news: true # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+Greetings and a warm welcome to my corner of the internet! I am thrilled to introduce myself as a Postdoctoral Research Associate at the esteemed [Department of Chemistry at the College of Staten Island, City University of New York (CUNY), USA](https://www.csi.cuny.edu/). Working with the accomplished [Prof. Sharon Loverde](https://sites.google.com/site/loverdelaboratory/) and her dynamic research group.  
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+My ongoing research efforts are focused on developing computational techniques to explore the structure and stability of the nucleosome core particle through a combination of all-atom and coarse-grained simulations.
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+I have completed my PhD from [S. N. Bose National Centre for Basic Sciences, India [An autonomous institute under the Department of Science & Technology, Govt. Of India](https://www.bose.res.in/) with [Prof. Jaydeb Chakrabarti](https://sites.google.com/view/softmatter-snbncbs). My [PhD thesis](https://www.culibrary.ac.in/digital-lib-dev/ebook/list_document.php?cat=1&department=555&document_folder=phd/T14408) explores the domain of molecular dynamics simulations as they relate to biomolecules like proteins, with a special emphasis on unraveling relaxation phenomena within proteins, particularly in relation to dihedral angles.
