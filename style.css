@@ -246,22 +246,25 @@ body.inner-page:has(.publication-main) .page-top {
     border-bottom: 1px solid #dce8f0;
     box-sizing: border-box;
 }
+/* Align Publications header with publication list */
 
-/* Center header content */
 body.inner-page:has(.publication-main) .page-top > .container {
-    width: 100%;
-    max-width: 1100px;
+    width: min(100% - 48px, 790px) !important;
+    max-width: 790px !important;
+
     margin-left: auto !important;
     margin-right: auto !important;
-    padding-left: 24px;
-    padding-right: 24px;
+
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+
     box-sizing: border-box;
 }
 
 /* Keep heading and text left-aligned */
+
 body.inner-page:has(.publication-main) .page-top h1,
 body.inner-page:has(.publication-main) .page-top .publication-intro {
     text-align: left;
 }
-
 /* Keep the existing publication list unchanged */
