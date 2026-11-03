@@ -151,3 +151,48 @@ html{scroll-behavior:auto}
         height: auto !important;
     }
 }
+/* Reduce spacing between introduction and photograph */
+
+.home-intro-inner {
+    display: grid !important;
+    grid-template-columns: minmax(0, 1fr) 350px !important;
+    column-gap: 15px !important;
+    align-items: center !important;
+
+    max-width: 900px !important;
+    margin: 0 auto !important;
+}
+
+/* Introduction text */
+
+.home-intro-inner .intro-copy {
+    width: 100%;
+    min-width: 0;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
+
+/* Photograph */
+
+.home-intro-inner .home-cartoon {
+    width: 100%;
+    max-width: 350px;
+    margin: 0 !important;
+    justify-self: start;
+}
+
+/* Mobile screens */
+
+@media (max-width: 768px) {
+    .home-intro-inner {
+        grid-template-columns: 1fr !important;
+        gap: 20px !important;
+        max-width: 100% !important;
+    }
+
+    .home-intro-inner .home-cartoon {
+        max-width: 350px;
+        margin: 0 auto !important;
+    }
+}
