@@ -101,20 +101,49 @@ html{scroll-behavior:auto}
 @media(max-width:900px){.home-page .home-intro-inner{grid-template-columns:1fr;gap:24px}.home-page .home-graphic.home-cartoon{max-width:740px}}
 /* Homepage cartoon image */
 
-.hero-image img {
+.home-graphic.home-cartoon {
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+    margin: 0 auto !important;
+    width: 100%;
+    max-width: 450px;
+    height: auto !important;
+    min-height: 0 !important;
+    overflow: visible !important;
+}
+
+/* Image size */
+
+.home-graphic.home-cartoon img {
     display: block;
     width: 100%;
     max-width: 450px;
-    height: auto;
-    object-fit: contain;
+    height: auto !important;
+    object-fit: contain !important;
     margin: 0 auto;
     border-radius: 12px;
 }
 
+/* Image caption */
+
+.home-graphic.home-cartoon figcaption {
+    text-align: center;
+    font-size: 13px;
+    color: #5b6470;
+    margin-top: 8px;
+}
+
 /* Mobile screens */
+
 @media (max-width: 768px) {
-    .hero-image img {
+    .home-graphic.home-cartoon {
         max-width: 100%;
-        height: auto;
+    }
+
+    .home-graphic.home-cartoon img {
+        max-width: 100%;
+        height: auto !important;
     }
 }
