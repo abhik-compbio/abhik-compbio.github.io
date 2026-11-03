@@ -33,3 +33,40 @@ html{scroll-behavior:auto}
 .site-header .brand:hover{color:var(--ink)}
 .footer a{color:var(--accent)}
 @media(max-width:680px){.page-top{padding:35px 0}.inner-page .section,.inner-page .contact{padding-top:45px}}
+
+/* Google Sites-inspired introduction homepage, reworked in the light theme */
+.home-page .home-intro{background:#f8fbfe;border-bottom:1px solid var(--line)}
+.home-page .home-intro-inner{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(240px,.7fr);gap:60px;align-items:center;padding:76px 0 69px}
+.home-page .home-intro h1{font-size:clamp(34px,4.1vw,56px);letter-spacing:-.04em;line-height:1.2;margin:14px 0 16px}
+.home-page .home-role{font-size:20px;font-weight:700;color:#28465c;margin:0 0 12px}
+.home-page .home-affiliation{font-size:16px;color:#506879;line-height:1.8;margin:0 0 16px}
+.home-page .home-email{color:#465e70;margin:0}
+.home-page .home-email a{color:var(--accent);font-weight:700;text-decoration:underline;text-underline-offset:3px}
+.home-page .home-graphic{background:#fff;border:1px solid #e2eaf0;border-radius:20px;max-width:400px;padding:18px 20px 8px;box-shadow:0 12px 32px rgba(32,62,87,.045)}
+.home-page .home-graphic svg{width:100%;height:auto;display:block}
+.home-page .home-graphic p{font-size:11px;color:#758694;text-align:center;margin:0 0 10px}
+.home-page .home-section{padding:65px 0;border-bottom:1px solid #edf1f5}
+.home-page .home-reading{max-width:990px}
+.home-page .home-section h2{font-size:clamp(29px,3vw,39px);margin:9px 0 24px}
+.home-page .home-section p{color:#405767;font-size:16px;line-height:1.85}
+.home-page .home-section .kicker{font-size:11px;color:var(--accent);margin:0}
+.home-page .home-section-tinted{background:#f6f9fc}
+.home-page .home-more{font-size:14px;color:var(--accent);font-weight:700;text-decoration:none}
+.home-page .home-more:hover{text-decoration:underline;text-underline-offset:3px}
+.home-page .home-heading-row{display:flex;justify-content:space-between;align-items:end;gap:16px}
+.home-page .home-news-list{list-style:none;counter-reset:news;display:grid;gap:0;margin:0;padding:0}
+.home-page .home-news-list li{counter-increment:news;position:relative;padding:18px 16px 18px 54px;border-bottom:1px solid #dae6ee;color:#384e60;line-height:1.72}
+.home-page .home-news-list li:before{content:counter(news,decimal-leading-zero);position:absolute;left:0;top:20px;font-size:13px;font-weight:800;color:var(--accent)}
+.home-page .home-news-list li:last-child{border-bottom:0}
+.home-page .home-news-list a{color:var(--accent);font-weight:700;text-decoration:underline;text-underline-offset:3px}
+.home-page .location-box{display:flex;align-items:center;justify-content:space-between;gap:20px;border:1px solid #dce6ee;border-radius:10px;background:#fff;padding:22px 25px}
+.home-page .location-box strong{color:#254257}
+.home-page .location-box p{margin:7px 0 0}
+@media(max-width:760px){.home-page .home-intro-inner{grid-template-columns:1fr;gap:25px;padding:42px 0}.home-page .home-graphic{max-width:300px}.home-page .home-section{padding:45px 0}.home-page .location-box{align-items:flex-start;flex-direction:column}.home-page .home-heading-row{align-items:start}}
+
+/* Illustrated portrait on the introductory home page */
+.home-page .home-intro-inner{grid-template-columns:minmax(0,0.85fr) minmax(380px,1.15fr);gap:48px}
+.home-page .home-graphic.home-cartoon{margin:0;max-width:none;padding:8px;background:#fff;overflow:hidden;border-radius:16px}
+.home-page .home-cartoon img{display:block;width:100%;height:auto;aspect-ratio:3/2;object-fit:cover;border-radius:10px}
+.home-page .home-cartoon figcaption{text-align:center;color:#6c7c8b;font-size:12px;padding:8px 0 2px}
+@media(max-width:900px){.home-page .home-intro-inner{grid-template-columns:1fr;gap:24px}.home-page .home-graphic.home-cartoon{max-width:740px}}
