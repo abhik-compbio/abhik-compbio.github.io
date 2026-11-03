@@ -196,3 +196,38 @@ html{scroll-behavior:auto}
         margin: 0 auto !important;
     }
 }
+/* =========================================
+   Publications introductory text
+   ========================================= */
+
+.publication-intro {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 15px;
+    line-height: 1.7;
+    color: #5b6470;
+    margin: 15px 0 35px;
+    text-align: left;
+}
+
+/* Google Scholar and ResearchGate links */
+
+.publication-intro a {
+    color: #0b5f86;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+.publication-intro a:hover {
+    color: #084866;
+}
+
+/* Equal contribution notes */
+
+.publication-intro small {
+    display: block;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 12px;
+    line-height: 1.5;
+    color: #6b7280;
+    margin-top: 8px;
+}
