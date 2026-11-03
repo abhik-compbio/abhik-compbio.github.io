@@ -11,8 +11,7 @@
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Serif:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <style>
-/* Publication page uses Loverde-inspired typography and bibliography spacing.
-   These styles are self-contained: no changes to style.css are needed. */
+
 :root { --p-ink:#16191d; --p-muted:#5b6470; --p-accent:#0b5f86; --p-rule:#e3e7ec; }
 body.publications-page { background:#fff; color:var(--p-ink); font-family:'IBM Plex Sans',system-ui,sans-serif; font-size:17px; line-height:1.65; }
 .publications-page .site-header { background:#fff; border-bottom:1px solid var(--p-rule); box-shadow:none; }
@@ -52,26 +51,43 @@ body.publications-page { background:#fff; color:var(--p-ink); font-family:'IBM P
       </nav>
     </div>
   </header>
-  <main class="page-content" id="main-content">
+ <main class="page-content" id="main-content">
+
+    <!-- Publications header with blue background -->
+    <div class="page-top">
+        <div class="container">
+
+            <span class="kicker">ABHIK GHOSH MOULICK</span>
+
+            <h1>Publications</h1>
+
+            <p class="publication-intro">
+                Also on
+                <a href="https://scholar.google.com/citations?user=LhON5E8AAAAJ&hl=en"
+                   target="_blank">
+                    Google Scholar
+                </a>
+                and
+                <a href="https://www.researchgate.net/profile/Abhik-Ghosh-Moulick"
+                   target="_blank">
+                    ResearchGate
+                </a>.
+
+                Where available, code and simulation trajectories
+                are linked below each publication.
+
+                <small>
+                    † Equal first contribution, * Equal second contribution.
+                </small>
+            </p>
+
+        </div>
+    </div>
+
+    <!-- Publications list starts below the blue background -->
     <div class="publication-main">
-      <div class="publication-eyebrow">PUBLICATIONS</div>
-      <h1>Publications</h1>
-     <p class="publication-intro">
-    Also on
-    <a href="https://scholar.google.com/citations?user=LhON5E8AAAAJ&hl=en" target="_blank">
-        Google Scholar
-    </a>
-    and
-    <a href="https://www.researchgate.net/profile/Abhik-Ghosh-Moulick" target="_blank">
-        ResearchGate
-    </a>.
-    Where available, code and simulation trajectories
-    are linked below each publication.
-       <br>
-    <small>
-    † Equal first contribution, * Equal second .
-      </small>
-</p>
+
+        <!-- Keep your existing publication entries here -->
       <section aria-labelledby="peer-reviewed-title">
         <h2 id="peer-reviewed-title">Peer-reviewed publications</h2>
 <ol class="publication-list" aria-label="Peer-reviewed publications">
