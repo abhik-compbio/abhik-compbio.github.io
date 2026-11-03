@@ -106,24 +106,25 @@ html{scroll-behavior:auto}
     border: none !important;
     box-shadow: none !important;
     padding: 0 !important;
-    margin: 0 auto !important;
+
     width: 100%;
-    max-width: 450px;
-    height: auto !important;
-    min-height: 0 !important;
-    overflow: visible !important;
+    max-width: 350px;
+    height: auto;
+    min-height: 0;
+
+    margin: 0 !important;
+    justify-self: start;
+    overflow: visible;
 }
 
-/* Image size */
+/* Image dimensions */
 
 .home-graphic.home-cartoon img {
     display: block;
     width: 100%;
-    max-width: 450px;
     height: auto !important;
-    object-fit: contain !important;
-    margin: 0 auto;
-    border-radius: 12px;
+    object-fit: contain;
+    border-radius: 8px;
 }
 
 /* Image caption */
@@ -138,40 +139,15 @@ html{scroll-behavior:auto}
 /* Mobile screens */
 
 @media (max-width: 768px) {
+
     .home-graphic.home-cartoon {
-        max-width: 100%;
+        width: 100%;
+        max-width: 350px;
+        margin: 0 auto !important;
     }
 
     .home-graphic.home-cartoon img {
-        max-width: 100%;
+        width: 100%;
         height: auto !important;
-    }
-}
-/* Reduce gap between name and photo */
-
-.home-hero {
-    display: grid;
-    grid-template-columns: minmax(0, 1fr) 350px;
-    gap: 20px !important;
-    align-items: center;
-    max-width: 950px;
-    margin: 0 auto;
-}
-
-/* Photo size */
-.home-graphic.home-cartoon {
-    max-width: 350px !important;
-    margin: 0 !important;
-}
-
-/* Mobile layout */
-@media (max-width: 768px) {
-    .home-hero {
-        grid-template-columns: 1fr;
-        gap: 15px !important;
-    }
-
-    .home-graphic.home-cartoon {
-        margin: 0 auto !important;
     }
 }
