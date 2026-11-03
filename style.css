@@ -99,3 +99,22 @@ html{scroll-behavior:auto}
 .home-page .home-cartoon img{display:block;width:100%;height:auto;aspect-ratio:3/2;object-fit:cover;border-radius:10px}
 .home-page .home-cartoon figcaption{text-align:center;color:#6c7c8b;font-size:12px;padding:8px 0 2px}
 @media(max-width:900px){.home-page .home-intro-inner{grid-template-columns:1fr;gap:24px}.home-page .home-graphic.home-cartoon{max-width:740px}}
+/* Homepage cartoon image */
+
+.hero-image img {
+    display: block;
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+    object-fit: contain;
+    margin: 0 auto;
+    border-radius: 12px;
+}
+
+/* Mobile screens */
+@media (max-width: 768px) {
+    .hero-image img {
+        max-width: 100%;
+        height: auto;
+    }
+}
