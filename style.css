@@ -231,3 +231,37 @@ html{scroll-behavior:auto}
     color: #6b7280;
     margin-top: 8px;
 }
+/* =========================================
+   PUBLICATIONS PAGE HEADER FIX
+   ========================================= */
+
+/* Full-width blue background */
+body.inner-page:has(.publication-main) .page-top {
+    width: 100%;
+    max-width: none !important;
+    margin: 0 !important;
+    padding: 45px 0 35px !important;
+
+    background-color: #edf5fa !important;
+    border-bottom: 1px solid #dce8f0;
+    box-sizing: border-box;
+}
+
+/* Center header content */
+body.inner-page:has(.publication-main) .page-top > .container {
+    width: 100%;
+    max-width: 1100px;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    padding-left: 24px;
+    padding-right: 24px;
+    box-sizing: border-box;
+}
+
+/* Keep heading and text left-aligned */
+body.inner-page:has(.publication-main) .page-top h1,
+body.inner-page:has(.publication-main) .page-top .publication-intro {
+    text-align: left;
+}
+
+/* Keep the existing publication list unchanged */
