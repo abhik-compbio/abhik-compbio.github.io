@@ -156,10 +156,10 @@ html{scroll-behavior:auto}
 .home-intro-inner {
     display: grid !important;
     grid-template-columns: minmax(0, 1fr) 350px !important;
-    column-gap: 15px !important;
+    column-gap: 10px !important;
     align-items: center !important;
 
-    max-width: 900px !important;
+    max-width: 800px !important;
     margin: 0 auto !important;
 }
 
